@@ -1,0 +1,18 @@
+.mainBoxHeader {
+  background-color: var(--color-logo-blue);
+  color: var(--color-logo-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxImages {
+  width: 1000px;
+  height: 300px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+.mainBoxActivities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxActivities {
+  width: 1000px;
+}

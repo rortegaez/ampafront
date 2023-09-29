@@ -1,0 +1,10 @@
+.mainBoxTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxTeam {
+  width: 1000px;
+}

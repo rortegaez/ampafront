@@ -1,0 +1,11 @@
+.mainFooter {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBoxFooter {
+  width: 1000px;
+}

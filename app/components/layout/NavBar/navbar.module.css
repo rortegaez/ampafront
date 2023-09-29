@@ -1,0 +1,28 @@
+.mainBoxNavbar {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxElements {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainUl {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.elements {
+  font-weight: bold;
+  text-decoration: none;
+}

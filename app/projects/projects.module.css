@@ -1,0 +1,10 @@
+.mainBoxProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxProjects {
+  width: 1000px;
+}
