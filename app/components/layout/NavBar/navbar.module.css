@@ -1,5 +1,5 @@
 .mainBoxNavbar {
-  background-color: red;
+  background-color: var(--color-light-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;

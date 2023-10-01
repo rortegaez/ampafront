@@ -6,23 +6,12 @@
 }
 
 .boxCard {
-  background-color: teal;
-  width: 970px;
+  background-color: var(--color-beige);
+  width: 950px;
   height: 380px;
   display: grid;
   grid-template-columns: 300px 300px 400px;
   grid-template-rows: 40px 300px 40px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.boxCardTeam {
-  background-color: teal;
-  width: 970px;
-  height: 230px;
-  display: grid;
-  grid-template-columns: 300px 300px 400px;
-  grid-template-rows: 40px 150px 40px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -69,4 +58,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* CSS para cardTeam */
+.boxCardTeam {
+  background-color: var(--color-orange);
+  width: 950px;
+  height: 230px;
+  display: grid;
+  grid-template-columns: 300px 300px 400px;
+  grid-template-rows: 40px 150px 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
