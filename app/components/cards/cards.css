@@ -5,7 +5,19 @@
   align-items: center;
 }
 
-.title {
+.boxCard {
+  background-color: var(--color-beige);
+  width: 950px;
+  height: 380px;
+  display: grid;
+  grid-template-columns: 300px 300px 350px;
+  grid-template-rows: 40px 300px 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.titleCards {
+  background-color: var(--color-orange);
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -51,30 +63,8 @@
 
 /* CSS para cardNews */
 
-.boxCard {
-  background-color: var(--color-beige);
-  width: 950px;
-  height: 380px;
-  display: grid;
-  grid-template-columns: 300px 300px 400px;
-  grid-template-rows: 40px 300px 40px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 /* CSS para cardProjects */
 
-/* .boxCardNews {
-  background-color: var(--color-beige);
-  width: 950px;
-  height: 380px;
-  display: grid;
-  grid-template-columns: 300px 300px 400px;
-  grid-template-rows: 40px 300px 40px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
- */
 /* CSS para cardTeam */
 .boxCardTeam {
   background-color: var(--color-orange);

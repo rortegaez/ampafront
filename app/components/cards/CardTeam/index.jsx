@@ -7,7 +7,7 @@ export function CardTeam() {
     <div>
       {teams.map((item, index) => (
         <div key={index} className="boxCardTeam">
-          <h3 className="title">{item.name}</h3>
+          <h3 className="titleCards">{item.name}</h3>
           <span className="paragrah">
             <p>{item.posicion}</p>
             <p>{item.subPosicion}</p>

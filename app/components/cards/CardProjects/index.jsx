@@ -7,7 +7,7 @@ export function CardProjects() {
     <div className="mainBoxCards">
       {projects.map((item, index) => (
         <div key={index} className="boxCard">
-          <h3 className="title">{item.title}</h3>
+          <h3 className="titleCards">{item.title}</h3>
           <p className="paragrah">{item.body}</p>
           <h6 className="date">{item.fecha}</h6>
           <div className="boxImages">{item.img}</div>
