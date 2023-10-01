@@ -7,8 +7,7 @@
 }
 
 .mainBox {
-  background-color: hotpink;
-  overflow-x: auto;
   width: 1000px;
-  height: 2000px;
+  height: auto;
+  max-height: 2000px;
 }
