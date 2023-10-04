@@ -1,7 +1,10 @@
 import Image from "next/image";
 
+import imgOne from "../boxImg/imgOne";
+import imgTwo from "../boxImg/imgTwo";
+
 const news = [
-  /*   {
+  {
     id: 1,
     title: "Proyectos",
     body: "Esto va a ir de menos a más",
@@ -30,7 +33,7 @@ const news = [
         ))}
       </div>,
     ],
-  }, */
+  },
 ];
 
 export default news;
