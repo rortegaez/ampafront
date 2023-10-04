@@ -1,32 +1,22 @@
 import Image from "next/image";
 
 import imgOne from "../boxImg/imgOne";
-import imgTwo from "../boxImg/imgTwo";
 
 const news = [
   {
     id: 1,
-    title: "Noticias",
-    body: "Esto va a ir de menos a más",
-    fecha: "Mon Sep 25 2023 19:33:40",
+    title: "El AMPA esta llegando...",
+    body:
+      "<p>Al final del curso pasado, tras una reunión informativa que realizo el colegio, dirigida por el director. Un grupo de padres, decidimos unirnos para que el colegio volviese a tener AMPA. El estreno de nuestra página web, es un paso más de los que ya se están dando.</p>" +
+      "<p>Actualmente estamos en el proceso de constituir el AMPA. Esta todo el proceso en marcha, pero estamos pendiente que nos llegue la confirmación desde al administración. En cuanto lo tengamos listo, os iremos informado.</p>" +
+      "<p>Pero la publicación de nuestra web, es un paso más para que los padres del Colegio Santa Teresa, podemos tener un lugar más, donde exponer nuestras dudas y entre todos ayudar, para resolver esas dudas y mejorar en lo posible la convivencia en nuestro colegio.</p>" +
+      "<p>Para todo los padres que quieran aquí estamos dispuesto a ayudar en lo que podamos. </p>" +
+      "<p>Un saludo</p>" +
+      "<p>AMPA Fernando Magallanes</p>",
+    fecha: "Wed Oct 04 2023",
     img: [
       <div>
         {imgOne.map((item, index) => (
-          <span key={index}>
-            <Image src={item.route} alt={item.alt} width={250} height={250} />
-          </span>
-        ))}
-      </div>,
-    ],
-  },
-  {
-    id: 2,
-    title: "Noticias 2",
-    body: "Esto va a ir de menos a más y ya va un poco más",
-    fecha: "Mon Sep 25 2023 19:37:40",
-    img: [
-      <div>
-        {imgTwo.map((item, index) => (
           <span key={index}>
             <Image src={item.route} alt={item.alt} width={250} height={250} />
           </span>

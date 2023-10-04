@@ -6,6 +6,7 @@
 }
 
 .boxForm {
+  margin-top: 20px;
   background-color: var(--color-grey);
   width: 600px;
   display: flex;

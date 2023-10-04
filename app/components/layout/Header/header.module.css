@@ -11,8 +11,13 @@
   width: 1000px;
   height: 300px;
   padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+}
+
+.photo {
+  border-radius: 10px;
 }
