@@ -30,7 +30,6 @@ export default function contact() {
   return (
     <div>
       <div className={styles.mainBoxContact}>
-        <h1>Contacto con nosotros</h1>
         <form ref={form} onSubmit={sendEmail} className={styles.boxForm}>
           <div className={styles.boxData}>
             <input
