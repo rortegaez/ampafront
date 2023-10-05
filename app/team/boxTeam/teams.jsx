@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const teams = [
-  {
+  /* {
     id: 1,
     name: "Raúl",
     email: "raul@raul.com",
@@ -30,7 +30,7 @@ const teams = [
         height={150}
       />
     ),
-  },
+  }, */
 ];
 
 export default teams;
