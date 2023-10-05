@@ -8,7 +8,10 @@ export function CardProjects() {
       {projects.map((item, index) => (
         <div key={index} className="boxCard">
           <h3 className="titleCards">{item.title}</h3>
-          <p className="paragrah">{item.body}</p>
+          <p
+            dangerouslySetInnerHTML={{ __html: item.body }}
+            className="paragrah"
+          />
           <h6 className="date">{item.fecha}</h6>
           <div className="boxImages">{item.img}</div>
         </div>

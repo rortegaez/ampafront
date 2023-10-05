@@ -16,8 +16,14 @@
   margin-bottom: 15px;
 }
 
+.prev {
+  background-color: var(--color-orange);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+}
+
 .titleCards {
-  /* background-color: var(--color-orange); */
   padding-top: 10px;
   grid-column-start: 1;
   grid-column-end: 3;

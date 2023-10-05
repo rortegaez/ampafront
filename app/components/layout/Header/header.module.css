@@ -13,9 +13,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 
 .photo {
