@@ -7,7 +7,7 @@
   align-items: center;
   .containerImages {
     width: 80vw;
-    height: 300px;
+    height: 40vh;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -15,10 +15,14 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    .photo {
+    .photoLogo {
       width: 50vw;
       border-radius: 10px;
-      object-fit: contain;
+    }
+    .photoCole {
+      height: 35vh;
+      border-radius: 10px;
+      object-fit: cover;
     }
   }
   .containerIcons {

@@ -9,7 +9,7 @@
   align-items: center; }
   .mainBoxHeader .containerImages {
     width: 80vw;
-    height: 300px;
+    height: 40vh;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -17,10 +17,13 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px; }
-    .mainBoxHeader .containerImages .photo {
+    .mainBoxHeader .containerImages .photoLogo {
       width: 50vw;
+      border-radius: 10px; }
+    .mainBoxHeader .containerImages .photoCole {
+      height: 35vh;
       border-radius: 10px;
-      object-fit: contain; }
+      object-fit: cover; }
   .mainBoxHeader .containerIcons {
     display: flex;
     flex-direction: column;
