@@ -1,11 +1,11 @@
-import styles from "./footer.module.css";
+import "../../globals.css";
 
 export function Footer() {
   const date = new Date().toString();
 
   return (
-    <div className={styles.mainFooter}>
-      <span className={styles.mainBoxFooter}>
+    <div className="mainBoxFooter">
+      <span className="mainFooter">
         <p>{date}</p>
         <p>
           Asociación de Madres y Padres de Alumnos Fernando Magallanes, del CEIP

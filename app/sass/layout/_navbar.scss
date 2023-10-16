@@ -1,0 +1,25 @@
+.mainBoxNavbar {
+  background-color: $color-light-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .boxElements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .mainUl {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      .elements {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}

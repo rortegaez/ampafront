@@ -1,0 +1,38 @@
+$color-logo-blue: #0054a8;
+$color-logo-yellow: #ffc500;
+$color-light-blue: #bec5e1;
+$color-beige: #ede3cd;
+$color-grey: #c2c1c4;
+$color-orange: #ff8000;
+$color-background: #cfe9f7;
+
+/* importación de sass componentes layout */
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/footer";
+@import "./cards/card";
+@import "./contact";
+@import "./news";
+@import "./project";
+@import "./team";
+
+.mainLayout {
+  background: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Perteneciente al page.js */
+.mainPage {
+  /* Esto se debe de cambiar a row, cuando hagamos el nav con las redes sociales */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .mainBoxPage {
+    width: 80vw;
+    height: auto;
+    max-height: 2000px;
+  }
+}

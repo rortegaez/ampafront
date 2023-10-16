@@ -1,17 +1,18 @@
 import Link from "next/link";
-import styles from "./navbar.module.css";
+
+import "../../globals.css";
 
 //import elementos incluido en el navbar
-import navOption from "./navOption";
+import navOption from "../../logic/elements/navOption";
 
 export function Navbar() {
   return (
-    <div className={styles.mainBoxNavbar}>
-      <section className={styles.boxElements}>
-        <ul className={styles.mainUl}>
+    <div className="mainBoxNavbar">
+      <section className="boxElements">
+        <ul className="mainUl">
           {navOption.map((item, index) => (
             <Link
-              className={styles.elements}
+              className="elements"
               key={index}
               href={item.link}
               target={item.target}

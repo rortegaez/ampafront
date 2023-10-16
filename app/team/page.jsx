@@ -1,12 +1,12 @@
 import { CardTeam } from "../components/cards/CardTeam";
 
-import styles from "./tema.module.css";
+import "../globals.css";
 
 export default function team() {
   return (
-    <div className={styles.mainBoxTeam}>
-      <h2 className={styles.mainTitle}>Equipo</h2>
-      <div className={styles.boxTeam}>
+    <div className="mainBoxTeam">
+      <h2 className="mainTitle">Equipo</h2>
+      <div className="boxTeam">
         <CardTeam />
       </div>
     </div>

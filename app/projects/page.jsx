@@ -1,12 +1,12 @@
 import { CardProjects } from "../components/cards/CardProjects";
 
-import styles from "./projects.module.css";
+import "../globals.css";
 
 export default function projects() {
   return (
-    <div className={styles.mainBoxProjects}>
-      <h2 className={styles.mainTitle}>Actividades</h2>
-      <div className={styles.boxProjects}>
+    <div className="mainBoxProjects">
+      <h2 className="mainTitle">Actividades</h2>
+      <div className="boxProjects">
         <CardProjects />
       </div>
     </div>

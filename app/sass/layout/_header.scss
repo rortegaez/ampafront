@@ -1,0 +1,34 @@
+.mainBoxHeader {
+  background: $color-logo-blue;
+  color: $color-logo-yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .containerImages {
+    width: 80vw;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    .photo {
+      width: 50vw;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+  }
+  .containerIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5vw;
+    .icon {
+      padding: 1vw;
+    }
+  }
+}

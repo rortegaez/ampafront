@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-import styles from "./contact.module.css";
+import "../globals.css";
 
 export default function contact() {
   const form = useRef();
@@ -29,35 +29,35 @@ export default function contact() {
 
   return (
     <div>
-      <div className={styles.mainBoxContact}>
-        <form ref={form} onSubmit={sendEmail} className={styles.boxForm}>
-          <div className={styles.boxData}>
+      <div className="mainContact">
+        <form ref={form} onSubmit={sendEmail} className="mainBoxForm">
+          <div className="boxData">
             <input
               type="text"
               placeholder="Name"
               name="user_name"
-              className={styles.boxName}
+              className="box"
             />
             <input
               type="email"
               placeholder="Email address"
               name="user_email"
-              className={styles.boxEmail}
+              className="box"
             />
           </div>
-          <div className={styles.boxText}>
+          <div className="boxText">
             <textarea
               name="message"
               type="text"
               placeholder="Message"
-              className={styles.textArea}
+              className="textArea"
             ></textarea>
           </div>
           <input
             type="submit"
             value="Enviar"
             id="input-submit"
-            className={styles.btnSubmit}
+            className="btnSubmit"
           />
         </form>
       </div>

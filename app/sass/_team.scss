@@ -1,0 +1,20 @@
+.mainBoxTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .mainTitle {
+    width: 80vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background: $color-logo-blue;
+    color: $color-logo-yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .boxTeam {
+    width: 80vw;
+  }
+}

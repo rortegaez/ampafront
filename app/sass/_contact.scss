@@ -1,0 +1,45 @@
+.mainContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .mainBoxForm {
+    margin-top: 2vw;
+    padding-top: 1.5vw;
+    background: $color-grey;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    .boxData {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+      .box {
+        margin-right: 10px;
+        width: 15vw;
+        height: 1vw;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    }
+    .boxText {
+      padding-top: 10px;
+      .textArea {
+        width: 30vw;
+        height: 5vw;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    }
+    .btnSubmit {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 8vw;
+      height: 2vw;
+      border-radius: 10px;
+    }
+  }
+}

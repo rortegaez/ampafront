@@ -1,6 +1,6 @@
 import projects from "../../../projects/boxProjects/projects";
 
-import "../cards.css";
+import "../../../globals.css";
 
 export function CardProjects() {
   return (
@@ -9,6 +9,7 @@ export function CardProjects() {
         <div key={index} className="boxCard">
           <h3 className="titleCards">{item.title}</h3>
           <p
+            /* dangerouslySetInnerHTML es para tomar un texto plano con elemento html y que se pueda mostrar .map */
             dangerouslySetInnerHTML={{ __html: item.body }}
             className="paragrah"
           />

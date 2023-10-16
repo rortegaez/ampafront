@@ -1,28 +1,269 @@
-:root {
-  --color-logo-blue: #0054a8;
-  --color-logo-yellow: #ffc500;
-  --color-light-blue: #bec5e1;
-  --color-beige: #ede3cd;
-  --color-grey: #c2c1c4;
-  --color-orange: #ff8000;
-  --color-background: #cfe9f7;
-}
-
-.mainBox {
-  background-color: var(--color-background);
+@charset "UTF-8";
+/* importación de sass componentes layout */
+.mainBoxHeader {
+  background: #0054a8;
+  color: #ffc500;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+  align-items: center; }
+  .mainBoxHeader .containerImages {
+    width: 80vw;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px; }
+    .mainBoxHeader .containerImages .photo {
+      width: 50vw;
+      border-radius: 10px;
+      object-fit: contain; }
+  .mainBoxHeader .containerIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5vw; }
+    .mainBoxHeader .containerIcons .icon {
+      padding: 1vw; }
 
-/* .mainTitle {
-  width: 1000px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: var(--color-logo-blue);
-  color: var(--color-logo-yellow);
+.mainBoxNavbar {
+  background-color: #bec5e1;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  border-radius: 5px;
-} */
+  align-items: center; }
+  .mainBoxNavbar .boxElements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainBoxNavbar .boxElements .mainUl {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      .mainBoxNavbar .boxElements .mainUl .elements {
+        font-weight: bold;
+        text-decoration: none; }
+
+.mainBoxFooter {
+  background-color: #bec5e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; }
+  .mainBoxFooter .mainFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.mainBoxCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainBoxCards .boxCard {
+    background: #ede3cd;
+    width: 80vw;
+    height: 380px;
+    display: grid;
+    grid-template-columns: 25vw 25vw 30vw;
+    grid-template-rows: 40px 300px 40px;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw; }
+    .mainBoxCards .boxCard .titleCards, .mainBoxCards .boxCard .prev .boxCardTeam .titleCardsTeam, .prev .boxCardTeam .mainBoxCards .boxCard .titleCardsTeam {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .mainBoxCards .boxCard .paragrah {
+      border-top: 3px solid #ff8000;
+      overflow-y: auto;
+      padding-top: 1vw;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .mainBoxCards .boxCard .date {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .mainBoxCards .boxCard .boxImages, .mainBoxCards .boxCard .prev .boxImagesTeam, .prev .mainBoxCards .boxCard .boxImagesTeam {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      width: 30vw;
+      margin: 15px; }
+      .mainBoxCards .boxCard .boxImages div, .mainBoxCards .boxCard .prev .boxImagesTeam div, .prev .mainBoxCards .boxCard .boxImagesTeam div {
+        object-fit: contain;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow-y: auto; }
+
+/* css cardteam */
+.prev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .prev .prev2 {
+    box-sizing: border-box;
+    width: 80vw;
+    background: #ff8000;
+    padding: 1.5vw;
+    border-radius: 1vw; }
+  .prev .boxCardTeam {
+    background: #ff8000;
+    width: 80vw;
+    height: 230px;
+    display: grid;
+    grid-template-columns: 25vw 25vw 30vw;
+    grid-template-rows: 40px 150px 40px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .prev .boxCardTeam .paragrahTeam {
+      border-top: 3px solid #c2c1c4;
+      padding-top: 15px;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin: 15px 25px 15px 35px; }
+    .prev .boxCardTeam .email {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.mainContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .mainContact .mainBoxForm {
+    margin-top: 2vw;
+    padding-top: 1.5vw;
+    background: #c2c1c4;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; }
+    .mainContact .mainBoxForm .boxData {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row; }
+      .mainContact .mainBoxForm .boxData .box {
+        margin-right: 10px;
+        width: 15vw;
+        height: 1vw;
+        border-radius: 10px;
+        padding: 10px; }
+    .mainContact .mainBoxForm .boxText {
+      padding-top: 10px; }
+      .mainContact .mainBoxForm .boxText .textArea {
+        width: 30vw;
+        height: 5vw;
+        border-radius: 10px;
+        padding: 10px; }
+    .mainContact .mainBoxForm .btnSubmit {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 8vw;
+      height: 2vw;
+      border-radius: 10px; }
+
+.mainBoxNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainBoxNews .mainTitle {
+    width: 80vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background: #0054a8;
+    color: #ffc500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; }
+  .mainBoxNews .boxNews {
+    width: 80vw; }
+
+.mainBoxProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainBoxProjects .mainTitle {
+    width: 80vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background: #0054a8;
+    color: #ffc500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; }
+  .mainBoxProjects .boxProjects {
+    width: 80vw; }
+
+.mainBoxTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainBoxTeam .mainTitle {
+    width: 80vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background: #0054a8;
+    color: #ffc500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; }
+  .mainBoxTeam .boxTeam {
+    width: 80vw; }
+
+.mainLayout {
+  background: #cfe9f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* Perteneciente al page.js */
+.mainPage {
+  /* Esto se debe de cambiar a row, cuando hagamos el nav con las redes sociales */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainPage .mainBoxPage {
+    width: 80vw;
+    height: auto;
+    max-height: 2000px; }
+
+/*# sourceMappingURL=globals.css.map */

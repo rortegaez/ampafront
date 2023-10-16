@@ -1,4 +1,4 @@
-import { CardNews } from "../../cards/CardNews";
+import { CardNews } from "../cards/CardNews/index";
 
 export function MainNews() {
   return (
