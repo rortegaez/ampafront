@@ -1,6 +1,6 @@
 import teams from "../../../team/boxTeam/teams";
 
-import "../cards.css";
+import "../../../globals.css";
 
 export function CardTeam() {
   return (
@@ -13,8 +13,8 @@ export function CardTeam() {
         </p>
         <p>Saludos</p>
       </section>
-      {teams.map((item, index) => (
-        <div key={index} className="boxCardTeam">
+      {teams.map((item) => (
+        <div key={item.id} className="boxCardTeam">
           <h3 className="titleCardsTeam">{item.name}</h3>
           <span className="paragrahTeam">
             <p>{item.posicion}</p>

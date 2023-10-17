@@ -5,22 +5,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h1 {
+    font-size: 6vh;
+  }
   .containerImages {
     width: 80vw;
-    height: 40vh;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 30vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    gap: 2vw;
     .photoLogo {
-      width: 50vw;
+      width: 20vw;
+      height: 20vw;
       border-radius: 10px;
     }
     .photoCole {
-      height: 35vh;
+      height: 30vw;
+      width: 50vw;
       border-radius: 10px;
       object-fit: cover;
     }

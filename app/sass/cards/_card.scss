@@ -4,14 +4,17 @@
   justify-content: center;
   align-items: center;
   .boxCard {
+    box-sizing: border-box;
+    padding: 2vw;
     background: $color-beige;
     width: 80vw;
-    height: 380px;
+    height: 60vh;
     display: grid;
     grid-template-columns: 25vw 25vw 30vw;
-    grid-template-rows: 40px 300px 40px;
+    grid-template-rows: 10vh 40vh 10vh;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
+    border-radius: 10px;
     .titleCards {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -24,7 +27,6 @@
     .paragrah {
       border-top: 3px solid $color-orange;
       overflow-y: auto;
-      padding-top: 1vw;
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 2;
@@ -45,12 +47,13 @@
       grid-row-start: 2;
       grid-row-end: 3;
       width: 30vw;
-      margin: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       div {
         object-fit: contain;
         display: flex;
         flex-direction: row;
-        gap: 10px;
         overflow-y: auto;
       }
     }
@@ -58,7 +61,7 @@
 }
 
 /* css cardteam */
-
+/* pendiente corregir cuando vayamos poniendo quien es el equipo */
 .prev {
   display: flex;
   flex-direction: column;
@@ -70,14 +73,15 @@
     background: $color-orange;
     padding: 1.5vw;
     border-radius: 1vw;
+    font-weight: bold;
   }
   .boxCardTeam {
     background: $color-orange;
     width: 80vw;
-    height: 230px;
+    height: 40vh;
     display: grid;
     grid-template-columns: 25vw 25vw 30vw;
-    grid-template-rows: 40px 150px 40px;
+    grid-template-rows: 10vh 20vh 10vh;
     margin-top: 15px;
     margin-bottom: 15px;
     .titleCardsTeam {

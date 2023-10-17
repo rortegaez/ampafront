@@ -7,21 +7,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .mainBoxHeader h1 {
+    font-size: 6vh; }
   .mainBoxHeader .containerImages {
     width: 80vw;
-    height: 40vh;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 30vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 10px; }
+    gap: 2vw; }
     .mainBoxHeader .containerImages .photoLogo {
-      width: 50vw;
+      width: 20vw;
+      height: 20vw;
       border-radius: 10px; }
     .mainBoxHeader .containerImages .photoCole {
-      height: 35vh;
+      height: 30vw;
+      width: 50vw;
       border-radius: 10px;
       object-fit: cover; }
   .mainBoxHeader .containerIcons {
@@ -52,6 +56,7 @@
       align-items: center;
       justify-content: space-around; }
       .mainBoxNavbar .boxElements .mainUl .elements {
+        font-size: 2.5vh;
         font-weight: bold;
         text-decoration: none; }
 
@@ -63,6 +68,7 @@
   align-items: center;
   margin-top: 20px; }
   .mainBoxFooter .mainFooter {
+    font-size: 1.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,14 +80,17 @@
   justify-content: center;
   align-items: center; }
   .mainBoxCards .boxCard {
+    box-sizing: border-box;
+    padding: 2vw;
     background: #ede3cd;
     width: 80vw;
-    height: 380px;
+    height: 60vh;
     display: grid;
     grid-template-columns: 25vw 25vw 30vw;
-    grid-template-rows: 40px 300px 40px;
+    grid-template-rows: 10vh 40vh 10vh;
     margin-top: 1.5vw;
-    margin-bottom: 1.5vw; }
+    margin-bottom: 1.5vw;
+    border-radius: 10px; }
     .mainBoxCards .boxCard .titleCards, .mainBoxCards .boxCard .prev .boxCardTeam .titleCardsTeam, .prev .boxCardTeam .mainBoxCards .boxCard .titleCardsTeam {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -93,7 +102,6 @@
     .mainBoxCards .boxCard .paragrah {
       border-top: 3px solid #ff8000;
       overflow-y: auto;
-      padding-top: 1vw;
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 2;
@@ -112,15 +120,17 @@
       grid-row-start: 2;
       grid-row-end: 3;
       width: 30vw;
-      margin: 15px; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .mainBoxCards .boxCard .boxImages div, .mainBoxCards .boxCard .prev .boxImagesTeam div, .prev .mainBoxCards .boxCard .boxImagesTeam div {
         object-fit: contain;
         display: flex;
         flex-direction: row;
-        gap: 10px;
         overflow-y: auto; }
 
 /* css cardteam */
+/* pendiente corregir cuando vayamos poniendo quien es el equipo */
 .prev {
   display: flex;
   flex-direction: column;
@@ -131,14 +141,15 @@
     width: 80vw;
     background: #ff8000;
     padding: 1.5vw;
-    border-radius: 1vw; }
+    border-radius: 1vw;
+    font-weight: bold; }
   .prev .boxCardTeam {
     background: #ff8000;
     width: 80vw;
-    height: 230px;
+    height: 40vh;
     display: grid;
     grid-template-columns: 25vw 25vw 30vw;
-    grid-template-rows: 40px 150px 40px;
+    grid-template-rows: 10vh 20vh 10vh;
     margin-top: 15px;
     margin-bottom: 15px; }
     .prev .boxCardTeam .paragrahTeam {
@@ -174,27 +185,27 @@
     justify-content: center;
     border-radius: 10px; }
     .mainContact .mainBoxForm .boxData {
-      padding-top: 10px;
+      padding-top: 2vw;
       display: flex;
       flex-direction: row; }
       .mainContact .mainBoxForm .boxData .box {
-        margin-right: 10px;
+        margin: 1vw;
         width: 15vw;
         height: 1vw;
         border-radius: 10px;
-        padding: 10px; }
+        padding: 1vw; }
     .mainContact .mainBoxForm .boxText {
-      padding-top: 10px; }
+      padding-top: 2vw; }
       .mainContact .mainBoxForm .boxText .textArea {
-        width: 30vw;
+        width: 35vw;
         height: 5vw;
         border-radius: 10px;
-        padding: 10px; }
+        padding: 1vw; }
     .mainContact .mainBoxForm .btnSubmit {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
       width: 8vw;
-      height: 2vw;
+      height: 3vw;
       border-radius: 10px; }
 
 .mainBoxNews {
@@ -211,7 +222,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .mainBoxNews .boxNews {
     width: 80vw; }
 
@@ -229,7 +240,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .mainBoxProjects .boxProjects {
     width: 80vw; }
 
@@ -247,7 +258,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .mainBoxTeam .boxTeam {
     width: 80vw; }
 

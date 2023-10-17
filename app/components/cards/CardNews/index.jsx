@@ -1,14 +1,16 @@
+// "use client";
+
 import news from "../../../news/boxNews/news";
 
-import "../cards.css";
+import "../../../globals.css";
 
 export function CardNews() {
   return (
     <div className="mainBoxCards">
-      {news.map((item, index) => (
-        <div key={index} className="boxCard">
+      {news.map((item) => (
+        <div className="boxCard" key={item.id}>
           <h3 className="titleCards">{item.title}</h3>
-          <p
+          <div
             dangerouslySetInnerHTML={{ __html: item.body }}
             className="paragrah"
           />

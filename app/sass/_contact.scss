@@ -14,31 +14,31 @@
     justify-content: center;
     border-radius: 10px;
     .boxData {
-      padding-top: 10px;
+      padding-top: 2vw;
       display: flex;
       flex-direction: row;
       .box {
-        margin-right: 10px;
+        margin: 1vw;
         width: 15vw;
         height: 1vw;
         border-radius: 10px;
-        padding: 10px;
+        padding: 1vw;
       }
     }
     .boxText {
-      padding-top: 10px;
+      padding-top: 2vw;
       .textArea {
-        width: 30vw;
+        width: 35vw;
         height: 5vw;
         border-radius: 10px;
-        padding: 10px;
+        padding: 1vw;
       }
     }
     .btnSubmit {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
       width: 8vw;
-      height: 2vw;
+      height: 3vw;
       border-radius: 10px;
     }
   }

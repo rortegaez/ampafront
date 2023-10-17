@@ -1,3 +1,5 @@
+"use client";
+
 import projects from "../../../projects/boxProjects/projects";
 
 import "../../../globals.css";
@@ -5,10 +7,10 @@ import "../../../globals.css";
 export function CardProjects() {
   return (
     <div className="mainBoxCards">
-      {projects.map((item, index) => (
-        <div key={index} className="boxCard">
+      {projects.map((item) => (
+        <div key={item.id} className="boxCard">
           <h3 className="titleCards">{item.title}</h3>
-          <p
+          <div
             /* dangerouslySetInnerHTML es para tomar un texto plano con elemento html y que se pueda mostrar .map */
             dangerouslySetInnerHTML={{ __html: item.body }}
             className="paragrah"

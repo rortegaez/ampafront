@@ -13,12 +13,13 @@ export function Header() {
         <Image
           src="/imgGeneral/logo260x260.png"
           alt="logo del ampa"
-          width={600}
+          width={300}
           height={300}
           className="photoLogo"
         />
         <Image
-          src="/imgGeneral/fotoGeneralColeMod.jpg"
+          src="/imgGeneral/fotoGeneralColeMod.png"
+          priority
           alt="Foto general del colegio"
           width={600}
           height={300}
@@ -27,7 +28,7 @@ export function Header() {
 
         <div className="containerIcons">
           {icons.map((item, index) => (
-            <Link href={item.link} target="_blank">
+            <Link key={index} href={item.link} target="_blank">
               <Image
                 src={item.url}
                 alt={item.name}
