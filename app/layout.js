@@ -1,6 +1,6 @@
 import { Footer } from './components/layout/Footer.jsx'
 import { Header } from './components/layout/Header.jsx'
-import { Navbar } from './components/layout/NavBar.jsx'
+import { Navbar } from './components/layout/Navbar.jsx'
 
 import './globals.css'
 
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <body className='mainLayout'>
-        <Header />
+        <Header className="hola" />
         <Navbar />
         {children}
         <Footer />

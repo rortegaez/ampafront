@@ -9,10 +9,10 @@
     font-size: 6vh;
   }
   .containerImages {
-    width: 80vw;
-    height: 30vw;
+    width: 70vw;
+    height: 15vw;
     padding-top: 1vw;
-    padding-bottom: 2vw;
+    padding-bottom: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,13 +21,10 @@
     .photoLogo {
       width: 20vw;
       height: 20vw;
-      border-radius: 10px;
     }
     .photoCole {
-      height: 30vw;
-      width: 50vw;
-      border-radius: 10px;
-      object-fit: cover;
+      height: 20vw;
+      width: 40vw;
     }
   }
   .containerIcons {
