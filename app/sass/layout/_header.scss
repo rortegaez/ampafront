@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 30vw;
+
   h1 {
     font-size: 6vh;
   }
@@ -35,6 +37,31 @@
     padding-left: 1.5vw;
     .icon {
       padding: 1vw;
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .mainBoxHeader {
+    height: 30vw;
+    h1 {
+      display: none;
+    }
+    .containerImages {
+      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      .photoCole {
+        display: none;
+      }
+      .photoLogo {
+        padding-top: 5vw;
+      }
+      .containerIcons {
+        flex-direction: row;
+      }
     }
   }
 }

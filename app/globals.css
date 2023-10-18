@@ -6,7 +6,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 30vw; }
   .mainBoxHeader h1 {
     font-size: 6vh; }
   .mainBoxHeader .containerImages {
@@ -32,8 +33,25 @@
     align-items: center;
     padding-left: 1.5vw; }
     .mainBoxHeader .containerIcons .icon {
-      padding: 1vw; }
+      padding: 1vw;
+      width: 5vw;
+      height: 5vw; }
 
+@media (max-width: 480px) {
+  .mainBoxHeader {
+    height: 30vw; }
+    .mainBoxHeader h1 {
+      display: none; }
+    .mainBoxHeader .containerImages {
+      object-fit: cover;
+      display: flex;
+      flex-direction: column; }
+      .mainBoxHeader .containerImages .photoCole {
+        display: none; }
+      .mainBoxHeader .containerImages .photoLogo {
+        padding-top: 5vw; }
+      .mainBoxHeader .containerImages .containerIcons {
+        flex-direction: row; } }
 .mainBoxNavbar {
   background-color: #bec5e1;
   display: flex;
