@@ -1,7 +1,7 @@
 const imgOne = [
   {
     id: 1,
-    route: "/logo260x260.png",
+    route: "/imgGeneral/logo.png",
     alt: "ProjectOne",
   },
 ];

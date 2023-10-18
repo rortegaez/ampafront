@@ -11,7 +11,8 @@ export function Header() {
       <h1>AMPA Fernando Magallanes</h1>
       <section className="containerImages">
         <Image
-          src="/imgGeneral/logo260x260.png"
+          src="/imgGeneral/logo.png"
+          priority
           alt="logo del ampa"
           width={300}
           height={300}
