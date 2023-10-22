@@ -39,19 +39,28 @@
 
 @media (max-width: 480px) {
   .mainBoxHeader {
-    height: 30vw; }
+    background: cadetblue;
+    height: auto; }
     .mainBoxHeader h1 {
       display: none; }
     .mainBoxHeader .containerImages {
-      object-fit: cover;
+      height: auto;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .mainBoxHeader .containerImages .photoLogo {
+        padding-top: 1vh;
+        object-fit: cover;
+        width: 80vw;
+        height: auto; }
       .mainBoxHeader .containerImages .photoCole {
         display: none; }
-      .mainBoxHeader .containerImages .photoLogo {
-        padding-top: 5vw; }
-      .mainBoxHeader .containerImages .containerIcons {
-        flex-direction: row; } }
+    .mainBoxHeader .containerIcons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
 .mainBoxNavbar {
   background-color: #bec5e1;
   display: flex;
