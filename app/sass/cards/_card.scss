@@ -110,3 +110,21 @@
     @extend .boxImages;
   }
 }
+
+@media (max-width: 480px) {
+  .mainBoxCards {
+    .boxCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      .paragrah {
+        height: 50vw;
+      }
+      .boxImages {
+        width: 80vw;
+      }
+    }
+  }
+}

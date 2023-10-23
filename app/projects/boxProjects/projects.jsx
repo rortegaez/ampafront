@@ -11,7 +11,7 @@ const news = [
     img: [
       <div>
         <Image
-          src="/logo260x260.png"
+          src="/imgGeneral/logo.png"
           alt="logo del ampa"
           width={250}
           height={250}

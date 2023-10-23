@@ -57,10 +57,16 @@
       .mainBoxHeader .containerImages .photoCole {
         display: none; }
     .mainBoxHeader .containerIcons {
+      position: absolute;
+      top: 2vw;
+      right: 2vw;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      align-items: center; } }
+      align-items: center; }
+      .mainBoxHeader .containerIcons .icon {
+        width: 8vw;
+        height: 8vw; } }
 .mainBoxNavbar {
   background-color: #bec5e1;
   display: flex;
@@ -95,8 +101,8 @@
       background: #bec5e1;
       display: block;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 2vw;
+      left: 2vw;
       padding: 1.5vw;
       border-radius: 10px; }
     .mainBoxNavbar .boxElements {
@@ -229,6 +235,17 @@
       align-items: center;
       justify-content: center; }
 
+@media (max-width: 480px) {
+  .mainBoxCards .boxCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .mainBoxCards .boxCard .paragrah {
+      height: 50vw; }
+    .mainBoxCards .boxCard .boxImages, .mainBoxCards .boxCard .prev .boxImagesTeam, .prev .mainBoxCards .boxCard .boxImagesTeam {
+      width: 80vw; } }
 .mainContact {
   display: flex;
   flex-direction: column;
@@ -262,12 +279,34 @@
         border-radius: 10px;
         padding: 1vw; }
     .mainContact .mainBoxForm .btnSubmit {
+      background: #0054a8;
+      color: #ffc500;
       margin-top: 2vw;
       margin-bottom: 2vw;
       width: 8vw;
       height: 3vw;
       border-radius: 10px; }
 
+@media (max-width: 480px) {
+  .mainContact .mainBoxForm {
+    width: 80vw; }
+    .mainContact .mainBoxForm .boxData {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80vw; }
+      .mainContact .mainBoxForm .boxData .box {
+        width: 40vw;
+        height: 5vw; }
+    .mainContact .mainBoxForm .boxText .textArea {
+      width: 50vw;
+      height: 40vw; }
+    .mainContact .mainBoxForm .btnSubmit {
+      background: #0054a8;
+      color: #ffc500;
+      width: 20vw;
+      height: 8vw; } }
 .mainBoxNews {
   display: flex;
   flex-direction: column;
