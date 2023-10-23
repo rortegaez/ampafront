@@ -39,42 +39,93 @@
 
 @media (max-width: 480px) {
   .mainBoxHeader {
-    height: 30vw; }
+    background: cadetblue;
+    height: auto; }
     .mainBoxHeader h1 {
       display: none; }
     .mainBoxHeader .containerImages {
-      object-fit: cover;
+      height: auto;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .mainBoxHeader .containerImages .photoLogo {
+        padding-top: 1vh;
+        object-fit: cover;
+        width: 80vw;
+        height: auto; }
       .mainBoxHeader .containerImages .photoCole {
         display: none; }
-      .mainBoxHeader .containerImages .photoLogo {
-        padding-top: 5vw; }
-      .mainBoxHeader .containerImages .containerIcons {
-        flex-direction: row; } }
+    .mainBoxHeader .containerIcons {
+      position: absolute;
+      top: 2vw;
+      right: 2vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .mainBoxHeader .containerIcons .icon {
+        width: 8vw;
+        height: 8vw; } }
 .mainBoxNavbar {
   background-color: #bec5e1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .mainBoxNavbar .btn-open {
+    display: none; }
   .mainBoxNavbar .boxElements {
     width: 100%;
+    height: 8vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .mainBoxNavbar .boxElements .mainUl {
+    .mainBoxNavbar .boxElements .btn-close {
+      display: none; }
+    .mainBoxNavbar .boxElements .boxMenu {
       width: 60%;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-around; }
-      .mainBoxNavbar .boxElements .mainUl .elements {
+      .mainBoxNavbar .boxElements .boxMenu .elements {
         font-size: 2.5vh;
         font-weight: bold;
         text-decoration: none; }
 
+@media (max-width: 480px) {
+  .mainBoxNavbar {
+    background: none; }
+    .mainBoxNavbar .btn-open {
+      background: #bec5e1;
+      display: block;
+      position: absolute;
+      top: 2vw;
+      left: 2vw;
+      padding: 1.5vw;
+      border-radius: 10px; }
+    .mainBoxNavbar .boxElements {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      height: auto;
+      width: auto;
+      top: 5vh;
+      left: 0;
+      background: #bec5e1;
+      padding: 2vh;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); }
+      .mainBoxNavbar .boxElements.visible {
+        opacity: 1;
+        visibility: visible; }
+      .mainBoxNavbar .boxElements .boxMenu {
+        flex-direction: column;
+        align-items: flex-start; }
+        .mainBoxNavbar .boxElements .boxMenu .elements {
+          padding: 2.5vw 1vw 0.5vw 1vw;
+          width: 100%;
+          border-bottom: 1px solid #ede3cd; } }
 .mainBoxFooter {
   background-color: #bec5e1;
   display: flex;
@@ -184,6 +235,17 @@
       align-items: center;
       justify-content: center; }
 
+@media (max-width: 480px) {
+  .mainBoxCards .boxCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .mainBoxCards .boxCard .paragrah {
+      height: 50vw; }
+    .mainBoxCards .boxCard .boxImages, .mainBoxCards .boxCard .prev .boxImagesTeam, .prev .mainBoxCards .boxCard .boxImagesTeam {
+      width: 80vw; } }
 .mainContact {
   display: flex;
   flex-direction: column;
@@ -217,12 +279,34 @@
         border-radius: 10px;
         padding: 1vw; }
     .mainContact .mainBoxForm .btnSubmit {
+      background: #0054a8;
+      color: #ffc500;
       margin-top: 2vw;
       margin-bottom: 2vw;
       width: 8vw;
       height: 3vw;
       border-radius: 10px; }
 
+@media (max-width: 480px) {
+  .mainContact .mainBoxForm {
+    width: 80vw; }
+    .mainContact .mainBoxForm .boxData {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80vw; }
+      .mainContact .mainBoxForm .boxData .box {
+        width: 40vw;
+        height: 5vw; }
+    .mainContact .mainBoxForm .boxText .textArea {
+      width: 50vw;
+      height: 40vw; }
+    .mainContact .mainBoxForm .btnSubmit {
+      background: #0054a8;
+      color: #ffc500;
+      width: 20vw;
+      height: 8vw; } }
 .mainBoxNews {
   display: flex;
   flex-direction: column;
