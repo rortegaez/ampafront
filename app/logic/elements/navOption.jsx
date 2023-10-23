@@ -1,7 +1,7 @@
 const navOption = [
   {
     id: 1,
-    name: "inicio",
+    name: "Inicio",
     link: "/",
     target: "",
   },
